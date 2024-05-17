@@ -1,7 +1,7 @@
 fn main() {
     println!("What is your name?");
     let input = read_string();
-    println!("Hello {}", input);
+    println!("Hallo {}", input);
 }
 
 fn read_string() -> String {

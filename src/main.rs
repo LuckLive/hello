@@ -13,6 +13,7 @@ use chrono::{DateTime, Local};
 
 fn main() {
 
+
 // https://rustjobs.dev/blog/date-time-formatting-in-rust/
     let current_local: DateTime<Local> = Local::now();
     // let custom_format = current_local.format("%d.%m.%Y %H:%M:%S");

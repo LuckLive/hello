@@ -12,7 +12,7 @@ use chrono::{DateTime, Local, Utc, TimeZone};
 // ( main )------------------------------------------------------------
 
 fn main() {
-    let ts_utc = 1716174775;
+    let ts_utc: i32 = 1716174775;
     let timestamp_berlin = ts_utc + 7200;
     let zeit = Utc.timestamp_opt(timestamp_berlin as i64, 0).unwrap();
     let zeitform = zeit.format("%H:%M:%S");

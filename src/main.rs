@@ -8,10 +8,14 @@
 
 use chrono::{DateTime, Local, Utc, TimeZone};
 // use std::fs::File;
+pub mod  helpers;
 
 // ( main )------------------------------------------------------------
 
 fn main() {
+    let myresult = helpers::get_full_name("Peter", "Liebau");
+    println!("Hello from {}!", myresult);
+
     let ts_utc: i32 = 1716174775;
     let timestamp_berlin = ts_utc + 7200;
     let zeit: DateTime<Utc> = Utc.timestamp_opt(timestamp_berlin as i64, 0).unwrap();
